@@ -12,7 +12,7 @@ body {
 
 .topmargin {
 	width: 100vw;
-	height: 23.6vw;
+	height: 20.6vw;
 	padding-bottom: 0.9vh;
 	padding-bottom: 0.9vh;
 	box-sizing: border-box;
@@ -29,7 +29,7 @@ body {
 }
 
 .logo_word {
-	font: 82pt Helvetica bold Condensed;
+	font: 7.2vw Helvetica bold Condensed;
 	color: #ffffff;
 }
 
