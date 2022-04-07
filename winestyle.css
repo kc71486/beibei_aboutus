@@ -1,0 +1,197 @@
+@font-face {
+	font-family: "grunge5";
+	src: url('./resource/Grunge.ttf');
+}
+
+.body {
+	font-family: "grunge5", Georgia, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	background-color: #ffffff;
+	margin: 0 0 0 0;
+	overflow: hidden;
+}
+
+#topmargin {
+	max-height: 20px;
+	width: 100%;
+	height: 5%;
+	padding-top: 30px;
+	background-color: #f0b048;
+}
+
+#hangar {
+	font-size: 72px;
+	color: #f0b048;
+	position: absolute;
+	width: 100%;
+	top: 20%;
+}
+.sideword {
+	max-width: 300px;
+	max-height: 50px;
+	width: 20%;
+    height: 10%;
+	color: #000000;
+	cursor: pointer;
+}
+#munuword {
+	position: absolute;
+	top: 10%;
+	right: 85%;
+}
+#munuword:hover {
+	color: #f5e0a0;
+}
+#cartword {
+	position: absolute;
+	top: 10%;
+	left: 85%;
+}
+#cartword:hover {
+	color: #f5e0a0;
+}
+
+.side_area {
+	width: 300px;
+	height: 100%;
+	padding: 50px 0;
+	background-color: #202020;
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	z-index: 2;
+}
+#menu {
+	position: absolute;
+	left: 0%;
+	transform: translateX(-100%);
+	transition: .3s;
+}
+#cart{
+	position: absolute;
+	right: 0%;
+	transform: translateX(100%);
+	transition: .3s;
+}
+
+.scrolled_title {
+	color: #f5d8a0;
+	padding: 30px 0;
+}
+.scrolled_content {
+	color: #ffffff;
+}
+
+#screen_mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+	display: block;
+	opacity:0;
+	z-index:-2;
+}
+
+.cross {
+	width: 40px;
+    height: 40px;
+}
+#menu_cross {
+	position: absolute;
+	left: 10%;
+	top: 5%;
+}
+#cart_cross {
+	position: absolute;
+	right: 10%;
+	top: 5%;
+}
+
+.arrow_left {
+	position: absolute;
+	top: 55%;
+	right: 87%;
+	width: 80px;
+    height: 40px;
+	transform: rotate(180deg);
+	cursor: pointer;
+}
+#arrow_left_black {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: .5s;
+}
+#arrow_left_yellow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s;
+}
+.arrow_left:hover #arrow_left_black {
+  opacity: 0;
+}
+.arrow_left:hover #arrow_left_yellow {
+  opacity: 1;
+}
+
+.arrow_right {
+	position: absolute;
+	top: 55%;
+	left: 87%;
+	width: 80px;
+    height: 40px;
+	transform: rotate(10deg);
+	cursor: pointer;
+}
+#arrow_right_black {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition: .5s;
+}
+#arrow_right_yellow {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .5s;
+}
+.arrow_right:hover #arrow_right_black {
+  opacity: 0;
+}
+.arrow_right:hover #arrow_right_yellow {
+  opacity: 1;
+}
+
+#wine {
+	position: absolute;
+	top: 40%;
+	left: -20%;
+	width: 140%;
+	height: 140%;
+	transform: rotate(0deg);
+	transition: .5s;
+	z-index: -1;
+}
+#choose_area {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	width: 20%;
+	height: 60%;
+}
