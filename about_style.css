@@ -36,6 +36,8 @@ body {
 .teampic_container {
 	display: flex;
 	height: 66.7vw;
+	align-items: center;
+	justify-content: center;
 }
 
 .teampic {
@@ -43,6 +45,10 @@ body {
 	width: 100vw;
 	height: auto;
 	opacity: 0;
+}
+
+#noload {
+	z-index: -1;
 }
 
 @keyframes showpic {
