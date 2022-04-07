@@ -9,8 +9,8 @@ const memberInfo = ["工程師<br>電機系大三",
 					"工程師<br>電機系大三"];
 const description = ["We are BeiBei.<br>We are a TEAM.",
 					"BeiBei致力於提供學生組織一個<br>最輕鬆上手的智慧錢包系統，<br>快來認識我們的團隊夥伴吧!"];
-const descriptionFont = ["96pt Helvetica bold Condensed",
-						"36pt sans-serif"];
+const descriptionFont = ["5.6vw Helvetica bold Condensed",
+						"3.2vw sans-serif"];
 					
 
 function arrow_mousedown(ev) {
@@ -40,6 +40,10 @@ function updateMember() {
 	document.getElementById("member" + (f)%5).className = "people_pic people_area_3";
 	document.getElementById("member" + (f+1)%5).className = "people_pic people_area_4";
 	document.getElementById("member" + (f+2)%5).className = "people_pic people_area_5";
+	for(let i=0; i<5; i++) {
+		document.getElementById("dot" + i).className = "dot";
+	}
+	document.getElementById("dot" + f).classList.add("dot_chosen");
 	name.classList.add("fade");
 	info.classList.add("fade");
 	setTimeout(() => {
